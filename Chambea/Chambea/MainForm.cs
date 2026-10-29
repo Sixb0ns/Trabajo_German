@@ -29,5 +29,19 @@ namespace Chambea
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void Label2Click(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			if (textBox1.Text=="German"){
+				if (textBox2.Text=="Contraseña"){
+					
+				}
+			}
+		}
 	}
 }
