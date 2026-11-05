@@ -35,8 +35,8 @@ namespace Chambea
 			double y=Convert.ToDouble(textBox2.Text);
 			double x2=Convert.ToDouble(textBox3.Text);
 			double y2=Convert.ToDouble(textBox4.Text);
-			double d=Math.Sqrt(Math.Pow((Math.Pow(x2, 2)-Math.Pow(y, 2)),2)+Math.Pow((Math.Pow(y2, 2)-Math.Pow(y, 2)),2));
-			MessageBox.Show("La Distancia Entre Ambos Puntos Es De"+Convert.ToString(d));
+			double d=Math.Sqrt((x2-x)*(x2-x)+(y2-y)*(y2-y));
+			MessageBox.Show("La Distancia Entre Ambos Puntos Es De "+Convert.ToString(d));
 		}
 	}
 }
