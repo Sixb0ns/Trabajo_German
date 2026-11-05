@@ -50,9 +50,10 @@ namespace Chambea
 			// label1
 			// 
 			this.label1.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(0, 24);
+			this.label1.Location = new System.Drawing.Point(0, 30);
+			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(410, 47);
+			this.label1.Size = new System.Drawing.Size(547, 58);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Menu Principal";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -60,9 +61,10 @@ namespace Chambea
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(103, 74);
+			this.pictureBox1.Location = new System.Drawing.Point(137, 91);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(205, 175);
+			this.pictureBox1.Size = new System.Drawing.Size(273, 215);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox1.TabIndex = 1;
 			this.pictureBox1.TabStop = false;
@@ -75,37 +77,42 @@ namespace Chambea
 									this.encuentraElCuadranteToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(410, 24);
+			this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+			this.menuStrip1.Size = new System.Drawing.Size(547, 28);
 			this.menuStrip1.TabIndex = 2;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
 			// pesosADolaresToolStripMenuItem
 			// 
 			this.pesosADolaresToolStripMenuItem.Name = "pesosADolaresToolStripMenuItem";
-			this.pesosADolaresToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
+			this.pesosADolaresToolStripMenuItem.Size = new System.Drawing.Size(126, 24);
 			this.pesosADolaresToolStripMenuItem.Text = "&Pesos A Dolares";
+			this.pesosADolaresToolStripMenuItem.Click += new System.EventHandler(this.PesosADolaresToolStripMenuItemClick);
 			// 
 			// distanciaEntreDosPuntosToolStripMenuItem
 			// 
 			this.distanciaEntreDosPuntosToolStripMenuItem.Name = "distanciaEntreDosPuntosToolStripMenuItem";
-			this.distanciaEntreDosPuntosToolStripMenuItem.Size = new System.Drawing.Size(160, 20);
+			this.distanciaEntreDosPuntosToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
 			this.distanciaEntreDosPuntosToolStripMenuItem.Text = "&Distancia Entre Dos Puntos";
+			this.distanciaEntreDosPuntosToolStripMenuItem.Click += new System.EventHandler(this.DistanciaEntreDosPuntosToolStripMenuItemClick);
 			// 
 			// encuentraElCuadranteToolStripMenuItem
 			// 
 			this.encuentraElCuadranteToolStripMenuItem.Name = "encuentraElCuadranteToolStripMenuItem";
-			this.encuentraElCuadranteToolStripMenuItem.Size = new System.Drawing.Size(142, 20);
+			this.encuentraElCuadranteToolStripMenuItem.Size = new System.Drawing.Size(174, 24);
 			this.encuentraElCuadranteToolStripMenuItem.Text = "&Encuentra El Cuadrante";
+			this.encuentraElCuadranteToolStripMenuItem.Click += new System.EventHandler(this.EncuentraElCuadranteToolStripMenuItemClick);
 			// 
 			// Form1
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(410, 261);
+			this.ClientSize = new System.Drawing.Size(547, 321);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "Form1";
 			this.Text = "Form1";
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

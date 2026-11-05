@@ -37,10 +37,10 @@ namespace Chambea
 		
 		void Button1Click(object sender, EventArgs e)
 		{
-			if (textBox1.Text=="German"){
-				if (textBox2.Text=="Contraseña"){
-					
-				}
+			if (textBox2.Text=="usuario"&&textBox1.Text=="123"){
+				Form1 f = new Form1();
+				f.Show();
+				this.Hide();
 			}
 		}
 	}

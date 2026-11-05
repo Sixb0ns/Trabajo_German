@@ -28,5 +28,26 @@ namespace Chambea
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void PesosADolaresToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Form2 f = new Form2();
+			f.Show();
+			this.Hide();			
+		}
+		
+		void DistanciaEntreDosPuntosToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Form3 f = new Form3();
+			f.Show();
+			this.Hide();			
+		}
+		
+		void EncuentraElCuadranteToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Form4 f = new Form4();
+			f.Show();
+			this.Hide();			
+		}
 	}
 }
